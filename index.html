@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>James Griffin · Game Development Portfolio</title>
+  <meta name="description" content="James Griffin's game development portfolio: a Unity remake of The Legend of Zelda (NES) with a custom Armor Lock level.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>James Griffin</h1>
+      <p class="tagline">Game development · University of Michigan</p>
+      <!-- EDIT: your GitHub profile link -->
+      <nav><a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="project" id="zelda">
+      <p class="eyebrow">EECS 494 · Project 1 · Team project</p>
+      <h2>The Legend of Zelda Remake <span class="subtitle">+ Armor Lock</span></h2>
+
+      <figure>
+        <img src="images/zelda-custom-level.png" width="1280" height="720"
+             alt="Link in a dungeon room of the custom level, with Digdoggers rolling between the blocks and the NES-style HUD above">
+        <figcaption>The custom level: Digdoggers roll wall to wall, and only Armor Lock stops them.</figcaption>
+      </figure>
+
+      <p class="cta">
+        <!-- EDIT: this is our team's itch.io page; swap in your own link if you upload the game separately -->
+        <a class="button" href="https://squipwerd.itch.io/p1-studio17-zeldagold">Play on itch.io</a>
+        <span class="note">In game, the Triforce at the end of the dungeon (or <kbd>4</kbd>) takes you to the custom level. <kbd>Shift</kbd> is Armor Lock.</span>
+      </p>
+
+      <section>
+        <h3>About</h3>
+        <p>A recreation of the first dungeon of the original <em>Legend of Zelda</em> (NES) in Unity:
+          grid-locked movement, the dungeon's enemies and boss, items like the map and compass, keys and locked doors, and the
+          NES heads-up display. After the classic dungeon comes a custom level built around a new
+          mechanic, Armor Lock.</p>
+        <p><strong>Armor Lock.</strong> Hold Shift and Link plants his fist and raises a bubble shield.
+          While it's up nothing can hurt him, fireballs bounce back at whoever threw them, and rolling
+          Digdoggers blow up against it. It only lasts a few seconds and has to recharge, so choosing
+          when to lock is the level's central decision.</p>
+      </section>
+
+      <section>
+        <h3>What I built</h3>
+        <!-- EDIT: drafted from your commits. Fix anything that's wrong and add anything missing. -->
+        <ul>
+          <li>The project's foundation: the NES aspect ratio, the dungeon scenes, and Link's four-direction sprites.</li>
+          <li>Health and damage: Link's hearts on the HUD, knockback, and the red flash when an enemy is hit.</li>
+          <li>Room transitions, and, with my teammate Evan, the keys and locked doors, including keys that only appear once a room's enemies are defeated, placed where the original has them.</li>
+          <li>Enemies: the Goriya and its boomerang, the Keese with a reusable sprite-oscillation component, the Gel, enemy spawning, and, with Evan, the Wallmaster and blade traps. The blade traps wait for Link to line up with them, strike, and slide back home, like the NES.</li>
+          <li>Items and puzzle rooms: the boomerang pickup, pushable blocks, the Old Man room that opens on a push, and the side-view bow room.</li>
+          <li>Audio: the background music and sound effects, including the Armor Lock sounds.</li>
+          <li>All of the bug fixes and polish for the final build, like the sword beam timing, Link's and Aquamentus's hitboxes, and enemy animations that stopped after respawning.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Technology</h3>
+        <ul class="tags">
+          <li>C#</li>
+          <li>Unity 6</li>
+          <li>Git &amp; Git LFS (GitLab)</li>
+          <li>Jira</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer class="wrap">
+    <p>© 2026 James Griffin. <em>The Legend of Zelda</em> art and audio © Nintendo, used for a class project.</p>
+  </footer>
+</body>
+</html>
