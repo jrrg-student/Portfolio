@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>James Griffin · Game Development Portfolio</title>
-  <meta name="description" content="James Griffin's game development portfolio: a Unity remake of The Legend of Zelda (NES) with a custom Armor Lock level.">
+  <meta name="description" content="James Griffin's game development portfolio: Rockfish, a fishing game made in Unity, and The Legend of Zelda remake with Armor Lock.">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,28 @@
     <div class="wrap">
       <h1>James Griffin</h1>
       <p class="tagline">Game development · University of Michigan</p>
-      <nav><a href="https://github.com/jrrg-student">GitHub</a></nav>
+      <nav aria-label="Main navigation"><a href="#rockfish">Rockfish</a><a href="#zelda">Zelda + Armor Lock</a><a href="https://github.com/jrrg-student">GitHub <span aria-hidden="true">↗</span></a></nav>
     </div>
   </header>
 
   <main class="wrap">
+    <article class="project rockfish" id="rockfish" aria-labelledby="rockfish-title">
+      <p class="eyebrow">2D fishing game · Unity</p>
+      <div class="project-heading"><h2 id="rockfish-title">Rockfish</h2></div>
+      <p class="project-intro">A fishing game about keeping your catch on the line.</p>
+      <figure>
+        <img src="images/rockfish-hero.png" width="1924" height="1084" alt="Rockfish title screen with blue pixel-art underwater scenery, a message in a bottle, and musical instruments on the ocean floor" fetchpriority="high">
+        <figcaption>The Rockfish title screen.</figcaption>
+      </figure>
+      <p class="cta"><a class="button" href="https://jrrg.itch.io/rockfish">Play Rockfish <span aria-hidden="true">↗</span></a><span class="note">Playable in your browser on itch.io.</span></p>
+      <dl class="project-facts"><div><dt>Role</dt><dd>Solo designer &amp; developer</dd></div><div><dt>Timeline</dt><dd>Two weeks</dd></div><div><dt>Engine</dt><dd>Unity</dd></div></dl>
+      <section><h3>About</h3><p>Rockfish is a rapid prototype of a fishing game built around a skill-based reeling challenge. Cast your line, navigate obstacles, and manage line tension to bring in your catch. Catching Rockfish unlocks new fishing locations with different course behavior.</p></section>
+      <section><h3>What I built</h3><p>I handled the game design and programming in Unity. The main mechanic combines obstacle avoidance with line tension: players steer with the mouse and use the scroll wheel to adjust the fish’s size. Reeling in a fish means balancing both without hitting an obstacle or breaking the line.</p><p>I also built the course-generation system for the reeling challenges, with different course behavior across fishing locations.</p></section>
+      <section><h3>Continuing development</h3><p>This build is a rapid prototype, and I plan to keep developing Rockfish beyond it.</p></section>
+      <section><h3>Technology</h3><ul class="tags"><li>C#</li><li>Unity</li><li>Web build</li></ul></section>
+      <a class="next-project" href="#zelda">Explore Zelda + Armor Lock <span aria-hidden="true">↓</span></a>
+    </article>
+    <div class="project-divider" aria-hidden="true"><span>More selected work</span></div>
     <article class="project" id="zelda">
       <p class="eyebrow">EECS 494 · Project 1 · Team project</p>
       <h2>The Legend of Zelda Remake <span class="subtitle">+ Armor Lock</span></h2>
